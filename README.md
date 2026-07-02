@@ -132,54 +132,15 @@ My work connects mathematical modeling, simulation and real-world implementation
 
 ---
 
-## Featured Projects
+## 🚀 Engineering Portfolio
 
-### Autonomous Drone Systems
+The repositories below are generated automatically from my GitHub profile.
 
-Configuration and parameter tuning for drone platforms, including external magnetometer setup, accelerometer offsets, and Extended Kalman Filter integration for GPS-based navigation.
+<!-- PROJECTS:START -->
 
-**Repository:** `Parametros-De-Drone-F450-APM2.8-`
+Loading engineering portfolio...
 
----
-
-### Klipper Configuration for XYZ Da Vinci Pro
-
-Configuration files and setup documentation for running Klipper firmware on an XYZ Da Vinci Pro 1.0 3D printer, including stepper configuration, calibration and optimization workflow.
-
-**Repository:** `Klipper--XYZ-Davinci-Pro-V1.0`
-
----
-
-### MATLAB Stability Detector
-
-Educational MATLAB tool for visualizing poles and classifying the stability of dynamic systems in an intuitive way.
-
-**Repository:** `detector-de-estabilidad`
-
----
-
-### MATLAB Bode Diagram Tool
-
-MATLAB-based teaching tool for visualizing and interpreting Bode diagrams for control systems and frequency response analysis.
-
-**Repository:** `detector-de-bode`
-
----
-
-### Biomedical Vacuum Pressure Control
-
-PID-based vacuum pressure control system inspired by biomedical applications such as Negative Pressure Wound Therapy.
-
-**Repository:** `control-systems-lab`
-
----
-
-### PID Web Simulator
-
-Interactive web simulator for PID control applied to biomedical vacuum pressure regulation.
-
-**Repository:** `pid-control-web-simulator`
-
+<!-- PROJECTS:END -->
 ---
 
 ## Research and Teaching Interests
