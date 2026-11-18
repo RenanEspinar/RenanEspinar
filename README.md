@@ -1,84 +1,81 @@
 <div align="center">
-Renan Espinar Saavedra
-Mechatronics Engineer · MSc Biomedical Engineering  
-Software Developer · Applied R&D · Remote — Bolivia
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=2600&pause=1100&color=3976B9&center=true&vCenter=true&width=720&height=42&lines=Python+%7C+Linux+%7C+Robotics;Android+%7C+IoT+%7C+Embedded+Systems;Biomedical+Instrumentation+%7C+Control;Building%2C+testing+and+debugging+real+systems" alt="Engineering specialties" />
-![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-24292F?style=flat-square&logo=linkedin&logoColor=white)
-![ORCID](https://img.shields.io/badge/ORCID-Research-24292F?style=flat-square&logo=orcid&logoColor=white)
-![Email](https://img.shields.io/badge/Email-Contact-24292F?style=flat-square&logo=gmail&logoColor=white)
-</div>
-I develop software connected to real hardware: Android apps, Linux services, embedded systems and biomedical prototypes. Remote project-based work at Andes Labs since 2025; research coordination at UNIVALLE.
-Selected projects
+  <h1>Renan Andres Espinar Saavedra</h1>
+  <p><strong>Mechatronics Engineer · MSc in Biomedical Engineering</strong><br>
+  Software Developer · Applied R&D · Bolivia / Remote</p>  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&amp;size=18&amp;duration=2600&amp;pause=1100&amp;color=3976B9&amp;center=true&amp;vCenter=true&amp;width=760&amp;height=46&amp;lines=Python+%7C+Linux+%7C+Robotics;Android+%7C+IoT+%7C+Embedded+Systems;Biomedical+Instrumentation+%7C+Control;Building%2C+testing+and+debugging+real+systems" alt="Animated engineering specialties" />  <p>
+    <a href="https://www.linkedin.com/in/renanessaa"><img src="https://img.shields.io/badge/LinkedIn-Profile-24292F?style=flat-square&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn" /></a>
+    <a href="https://orcid.org/0009-0007-1918-7177"><img src="https://img.shields.io/badge/ORCID-Research-24292F?style=flat-square&amp;logo=orcid&amp;logoColor=white" alt="ORCID" /></a>
+    <a href="mailto:renanespinar.19@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-24292F?style=flat-square&amp;logo=gmail&amp;logoColor=white" alt="Email" /></a>
+  </p>
+</div>I develop software that works with real hardware: Android apps, Linux services, embedded systems and biomedical prototypes. Remote development at Andes Labs (since 2025); research coordination at UNIVALLE.
+Selected engineering projects
 <table>
-<tr>
-<td width="50%" valign="top">
-  <p><strong><a href="https://github.com/RenanEspinar/HomeCar">HomeCar</a></strong><br>
-  <sub>Android Auto · Home Assistant · Java</sub></p>
-  <p>Control Home Assistant from an Android Auto dashboard. Based on Fermata; device compatibility is under testing.</p>
-  <a href="https://github.com/RenanEspinar/HomeCar"><img alt="Open repository" src="https://img.shields.io/badge/Code-Repository-64748B?style=flat-square"></a>
-  <a href="https://github.com/RenanEspinar/HomeCar/releases"><img alt="Latest release" src="https://img.shields.io/github/v/release/RenanEspinar/HomeCar?include_prereleases&style=flat-square&label=release"></a>
-</td>
-<td width="50%" valign="top">
-  <p><strong><a href="https://github.com/RenanEspinar/Alexa-RTSP-Bridge">Alexa RTSP Bridge</a></strong><br>
-  <sub>Python · Docker · AWS Lambda · FFmpeg</sub></p>
-  <p>Bridge RTSP cameras to Alexa through Home Assistant and an HLS streaming pipeline.</p>
-  <a href="https://github.com/RenanEspinar/Alexa-RTSP-Bridge"><img alt="Open repository" src="https://img.shields.io/badge/Code-Repository-64748B?style=flat-square"></a>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-  <p><strong><a href="https://github.com/RenanEspinar/KYVORA">KYVORA / LIFTLOG</a></strong><br>
-  <sub>Flutter · Dart · FastAPI · PostgreSQL</sub></p>
-  <p>Offline-first Android training log with backend synchronization. Public test build.</p>
-  <a href="https://github.com/RenanEspinar/KYVORA"><img alt="Open repository" src="https://img.shields.io/badge/Code-Repository-64748B?style=flat-square"></a>
-</td>
-<td width="50%" valign="top">
-  <p><strong><a href="https://github.com/RenanEspinar/digital-stethoscope-viu-2024">Digital Stethoscope</a></strong><br>
-  <sub>Biomedical instrumentation · Audio acquisition · VIU 2024</sub></p>
-  <p>Master's research in cardiopulmonary audio recording, with samples and documented clinician-review history.</p>
-  <a href="https://github.com/RenanEspinar/digital-stethoscope-viu-2024#cardiac-audio-recordings"><img alt="Research and audio" src="https://img.shields.io/badge/Research-Audio%20samples-64748B?style=flat-square"></a>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-  <p><strong><a href="https://github.com/RenanEspinar/control-systems-lab">Control Systems Lab</a></strong><br>
-  <sub>Python · PID · Dynamic systems</sub></p>
-  <p>Model and simulation of closed-loop vacuum-pressure control for a biomedical-inspired system.</p>
-  <a href="https://github.com/RenanEspinar/control-systems-lab"><img alt="Open repository" src="https://img.shields.io/badge/Code-Repository-64748B?style=flat-square"></a>
-</td>
-<td width="50%" valign="top">
-  <p><strong><a href="https://github.com/RenanEspinar/pid-control-web-simulator">PID Web Simulator</a></strong><br>
-  <sub>Flask · Python · Matplotlib</sub></p>
-  <p>Interactively adjust PID gains and visualize the pressure response.</p>
-  <a href="https://github.com/RenanEspinar/pid-control-web-simulator"><img alt="Open repository" src="https://img.shields.io/badge/Code-Repository-64748B?style=flat-square"></a>
-</td>
-</tr>
-</table>
-Live engineering dashboard
-Project	Open issues	Pull requests	Latest activity
-HomeCar	![Issues](https://img.shields.io/github/issues/RenanEspinar/HomeCar?style=flat-square&label=)	![PRs](https://img.shields.io/github/issues-pr/RenanEspinar/HomeCar?style=flat-square&label=)	Releases
-KYVORA	![Issues](https://img.shields.io/github/issues/RenanEspinar/KYVORA?style=flat-square&label=)	![PRs](https://img.shields.io/github/issues-pr/RenanEspinar/KYVORA?style=flat-square&label=)	Commits
-Alexa RTSP Bridge	![Issues](https://img.shields.io/github/issues/RenanEspinar/Alexa-RTSP-Bridge?style=flat-square&label=)	![PRs](https://img.shields.io/github/issues-pr/RenanEspinar/Alexa-RTSP-Bridge?style=flat-square&label=)	Commits
-All repositories · HomeCar issue tracker · HomeCar pull requests
+  <tr>
+    <td width="50%" valign="top">
+      <strong><a href="https://github.com/RenanEspinar/HomeCar">HomeCar</a></strong><br>
+      <sub>Android Auto · Java · Home Assistant</sub>
+      <p><strong>What it does:</strong> Displays and controls a Home Assistant dashboard through Android Auto. Based on Fermata; compatibility is still being tested.</p>
+      <a href="https://github.com/RenanEspinar/HomeCar/issues"><img src="https://img.shields.io/github/issues/RenanEspinar/HomeCar?style=flat-square&amp;label=issues" alt="Open issues" /></a>
+      <a href="https://github.com/RenanEspinar/HomeCar/pulls"><img src="https://img.shields.io/github/issues-pr/RenanEspinar/HomeCar?style=flat-square&amp;label=PRs" alt="Open pull requests" /></a>
+      <a href="https://github.com/RenanEspinar/HomeCar/releases"><img src="https://img.shields.io/github/v/release/RenanEspinar/HomeCar?include_prereleases&amp;style=flat-square&amp;label=release" alt="Latest release" /></a>
+    </td>
+    <td width="50%" valign="top">
+      <strong><a href="https://github.com/RenanEspinar/Alexa-RTSP-Bridge">Alexa RTSP Bridge</a></strong><br>
+      <sub>Python · Docker · AWS Lambda · FFmpeg</sub>
+      <p><strong>What it does:</strong> Connects RTSP cameras to Alexa using Home Assistant and an HLS streaming pipeline.</p>
+      <a href="https://github.com/RenanEspinar/Alexa-RTSP-Bridge/issues"><img src="https://img.shields.io/github/issues/RenanEspinar/Alexa-RTSP-Bridge?style=flat-square&amp;label=issues" alt="Open issues" /></a>
+      <a href="https://github.com/RenanEspinar/Alexa-RTSP-Bridge/commits"><img src="https://img.shields.io/github/last-commit/RenanEspinar/Alexa-RTSP-Bridge?style=flat-square&amp;label=updated" alt="Last commit" /></a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <strong><a href="https://github.com/RenanEspinar/KYVORA">KYVORA / LIFTLOG</a></strong><br>
+      <sub>Flutter · FastAPI · PostgreSQL</sub>
+      <p><strong>What it does:</strong> Records workouts offline and synchronizes training data through a backend. Public test build.</p>
+      <a href="https://github.com/RenanEspinar/KYVORA/issues"><img src="https://img.shields.io/github/issues/RenanEspinar/KYVORA?style=flat-square&amp;label=issues" alt="Open issues" /></a>
+      <a href="https://github.com/RenanEspinar/KYVORA/commits"><img src="https://img.shields.io/github/last-commit/RenanEspinar/KYVORA?style=flat-square&amp;label=updated" alt="Last commit" /></a>
+    </td>
+    <td width="50%" valign="top">
+      <strong><a href="https://github.com/RenanEspinar/digital-stethoscope-viu-2024">Digital Stethoscope</a></strong><br>
+      <sub>Biomedical sensing · Digital audio · VIU 2024</sub>
+      <p><strong>What it does:</strong> Records cardiopulmonary sounds for digital playback and research analysis; includes audio samples.</p>
+      <a href="https://github.com/RenanEspinar/digital-stethoscope-viu-2024#cardiac-audio-recordings"><img src="https://img.shields.io/badge/Research-Listen%20to%20audio-64748B?style=flat-square" alt="Listen to audio samples" /></a>
+      <a href="https://github.com/RenanEspinar/digital-stethoscope-viu-2024/issues"><img src="https://img.shields.io/github/issues/RenanEspinar/digital-stethoscope-viu-2024?style=flat-square&amp;label=issues" alt="Open issues" /></a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <strong><a href="https://github.com/RenanEspinar/control-systems-lab">Control Systems Lab</a></strong><br>
+      <sub>Python · PID · Dynamic models</sub>
+      <p><strong>What it does:</strong> Simulates closed-loop vacuum-pressure control and disturbance response.</p>
+      <a href="https://github.com/RenanEspinar/control-systems-lab"><img src="https://img.shields.io/badge/View-Repository-64748B?style=flat-square" alt="Repository" /></a>
+    </td>
+    <td width="50%" valign="top">
+      <strong><a href="https://github.com/RenanEspinar/pid-control-web-simulator">PID Web Simulator</a></strong><br>
+      <sub>Python · Flask · NumPy · Matplotlib</sub>
+      <p><strong>What it does:</strong> Lets users adjust PID gains and inspect simulated pressure responses.</p>
+      <a href="https://github.com/RenanEspinar/pid-control-web-simulator"><img src="https://img.shields.io/badge/View-Repository-64748B?style=flat-square" alt="Repository" /></a>
+    </td>
+  </tr>
+</table>Repository activity
+Repository	Issues	Pull requests	Updates
+HomeCar			Releases
+KYVORA			Commits
+Alexa RTSP Bridge			Commits
+
+
 <details>
-<summary><b>More engineering tools and research</b></summary>
-Bode Diagram Analyzer — MATLAB frequency-response visualization.
-Stability Detector — MATLAB pole and stability analysis.
-Klipper / XYZ Da Vinci Pro — firmware retrofit project; repository currently has no uploaded files.
-F450 / APM 2.8 — drone configuration project; repository currently has no uploaded files.
-Current UNIVALLE research: intelligent digital stethoscope redesign, GymQuest and meteorological monitoring station (not all publicly released).
-</details>
-Activity
+<summary><strong>Additional engineering projects</strong></summary>- Bode Diagram Analyzer — MATLAB frequency-response visualization.
+- Stability Detector — MATLAB stability analysis.
+- Klipper / XYZ Da Vinci Pro — printer retrofit; repository currently empty.
+- F450 / APM 2.8 — flight-controller parameters; repository currently empty.
+</details>GitHub activity
 <div align="center">
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=RenanEspinar&theme=github_dark" alt="GitHub contribution activity" width="96%" />
-<details>
-<summary><b>Show animated contribution graph</b></summary>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/RenanEspinar/RenanEspinar/output/github-snake-dark.gif" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/RenanEspinar/RenanEspinar/output/github-snake-light.gif" />
-  <img src="https://raw.githubusercontent.com/RenanEspinar/RenanEspinar/output/github-snake-light.gif" width="95%" alt="Contribution animation" />
-</picture>
-</details>
-</div>
----
-<sub>Biomedical Engineering MSc (VIU) · Research Coordinator (UNIVALLE) · IEEE ANDESCON co-author · LinkedIn · ORCID</sub>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=RenanEspinar&amp;theme=github_dark" alt="GitHub activity" width="95%" />
+</div><details>
+<summary><strong>Animated contribution graph</strong></summary><div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/RenanEspinar/RenanEspinar/output/github-snake-dark.gif" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/RenanEspinar/RenanEspinar/output/github-snake-light.gif" />
+    <img src="https://raw.githubusercontent.com/RenanEspinar/RenanEspinar/output/github-snake-light.gif" alt="Animated contributions" width="95%" />
+  </picture>
+</div></details><sub>Biomedical Engineering MSc (VIU) · Research Coordinator (UNIVALLE) · IEEE ANDESCON co-author · LinkedIn · ORCID</sub>
