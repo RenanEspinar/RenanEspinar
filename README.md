@@ -1,177 +1,332 @@
 
-cd ~/proyectos || exit 1
+<div align="center">
 
-set -e
+# Renán Andrés Espinar Saavedra
 
-echo "=== PREPARANDO PERFIL ==="
+**Mechatronics Engineer · MSc in Biomedical Engineering**
 
-if [ ! -d "$HOME/proyectos/github-profile/.git" ]; then
-    git clone \
-    https://github.com/RenanEspinar/RenanEspinar.git \
-    "$HOME/proyectos/github-profile"
-fi
+Applied R&D · Software Development · Biomedical Instrumentation  
+**La Paz, Bolivia · Remote Engineering**
 
-cd "$HOME/proyectos/github-profile"
-
-if [ -n "$(git status --porcelain)" ]; then
-    echo "Hay cambios locales. No se modificara nada."
-    exit 1
-fi
-
-git pull --ff-only origin main
-
-echo "=== ACTUALIZANDO README ==="
-
-python3 - <<'PY'
-from pathlib import Path
-import re
-
-p = Path("README.md")
-text = p.read_text(encoding="utf-8")
-
-def replace_once(pattern, replacement):
-    global text
-    text, n = re.subn(
-        pattern,
-        lambda m: replacement,
-        text,
-        count=1,
-        flags=re.S
-    )
-    if n != 1:
-        raise RuntimeError(
-            "No se encontro la seccion: " + pattern[:70]
-        )
-
-header = '''<div align="center">
-
-<h1>Renán Andrés Espinar Saavedra</h1>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=2600&pause=1100&color=3976B9&center=true&vCenter=true&width=760&height=46&lines=Python+%7C+Linux+%7C+Robotics;Android+%7C+IoT+%7C+Embedded+Systems;Biomedical+Instrumentation+%7C+DSP;Research+%7C+Prototyping+%7C+Validation" alt="Engineering specialties" />
 
 <p>
-<strong>Mechatronics Engineer · Master's Degree in Biomedical Engineering</strong>
-<br>
-Software Developer · Applied R&D · Biomedical Instrumentation
-<br>
-La Paz, Bolivia · Remote Engineering
+  <a href="https://www.linkedin.com/in/renanessaa">
+    <img src="https://img.shields.io/badge/LinkedIn-Profile-24292F?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  </a>
+  <a href="https://orcid.org/0009-0007-1918-7177">
+    <img src="https://img.shields.io/badge/ORCID-Research-24292F?style=flat-square&logo=orcid&logoColor=white" alt="ORCID"/>
+  </a>
+  <a href="mailto:renanespinar.19@gmail.com">
+    <img src="https://img.shields.io/badge/Email-Contact-24292F?style=flat-square&logo=gmail&logoColor=white" alt="Email"/>
+  </a>
 </p>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&amp;size=18&amp;duration=2600&amp;pause=1100&amp;color=3976B9&amp;center=true&amp;vCenter=true&amp;width=760&amp;height=46&amp;lines=Python+%7C+Linux+%7C+Robotics;Android+%7C+IoT+%7C+Embedded+Systems;Biomedical+Instrumentation+%7C+DSP;Research+%7C+Prototyping+%7C+Validation" alt="Engineering specialties" />
+</div>
 
-<p>
-<a href="https://www.linkedin.com/in/renanessaa"><img src="https://img.shields.io/badge/LinkedIn-Profile-24292F?style=flat-square&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn"/></a>
-<a href="https://orcid.org/0009-0007-1918-7177"><img src="https://img.shields.io/badge/ORCID-Research-24292F?style=flat-square&amp;logo=orcid&amp;logoColor=white" alt="ORCID"/></a>
-<a href="mailto:renanespinar.19@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-24292F?style=flat-square&amp;logo=gmail&amp;logoColor=white" alt="Email"/></a>
-</p>
-'''
+## About Me
 
-replace_once(
-    r'\A<div align="center">.*?(?=</div>I develop software)',
-    header
-)
+I am a **Mechatronics Engineer with a Master's Degree in Biomedical Engineering**, working at the intersection of software development, electronic instrumentation, automation and applied research.
 
-intro = '''</div>
+I design, build and test systems that interact with real hardware, including Android applications, Linux services, embedded systems, biomedical devices and engineering simulation tools.
 
-## About
+My professional work combines software development with experimental engineering, from initial design and prototyping to implementation, testing and technical documentation.
 
-I develop software that interacts with physical systems: Android applications, Linux services, embedded electronics, automation and biomedical prototypes.
+**Current professional activities**
 
-My work combines **software engineering, mechatronics, biomedical instrumentation and applied research**.
+- **Research Coordinator — Technology and Computer Science**, Universidad del Valle (UNIVALLE), Bolivia.
+- **Software Developer & Applied R&D**, Andes Labs (remote, since 2025).
+- **University Lecturer**, engineering and technology subjects.
+- **Biomedical and Mechatronics Researcher**, with experience in instrumentation, signal processing, control systems and digital fabrication.
 
-**Current roles:** Remote software development and R&D at Andes Labs (since 2025); Research Coordinator for Technology and Computer Science at Universidad del Valle (UNIVALLE), Bolivia.
+---
 
-**Academic background:** Mechatronics Engineering degree (UCB) and University Master's Degree in Biomedical Engineering (VIU). Experience in university teaching, experimental engineering and technical research.
+## Featured Research — Electronic Stethoscope
 
-## Selected engineering projects'''
+<div align="center">
 
-replace_once(
-    r'</div>I develop software.*?Selected engineering projects',
-    intro
-)
+### Electronic Stethoscope for Cardiac Sound Acquisition and Processing
 
-stethoscope = '''<strong><a href="https://github.com/RenanEspinar/digital-stethoscope-viu-2024">Electronic Stethoscope</a></strong><br>
-<sub>VIU Thesis 2022–2023 · ESP32 · Wi-Fi · Python · DSP</sub>
-
-<p>Designed and built an electronic stethoscope prototype for cardiac-sound acquisition, wireless transmission, WAV recording, digital filtering and signal visualization.</p>
-
-<p>The original thesis documents a functional physical prototype and exploratory recordings from five patients reviewed by a medical specialist. The device is a research prototype, not a certified diagnostic instrument.</p>
+**Master's Thesis · Universidad Internacional de Valencia · 2023**
 
 <a href="https://github.com/RenanEspinar/digital-stethoscope-viu-2024">
-<img src="https://raw.githubusercontent.com/RenanEspinar/digital-stethoscope-viu-2024/main/assets/prototype_real_photo.jpg" width="240" alt="Original electronic stethoscope prototype"/>
+  <img src="https://raw.githubusercontent.com/RenanEspinar/digital-stethoscope-viu-2024/main/assets/prototype_real_photo.jpg" alt="Original electronic stethoscope prototype" width="420"/>
 </a>
 
-<p><sub>Original 2023 prototype. The modular 2026 redesign is a separate research phase.</sub></p>
+*Original functional prototype documented in my Master's thesis.*
 
-<a href="https://github.com/RenanEspinar/digital-stethoscope-viu-2024"><img src="https://img.shields.io/badge/Research-Project-64748B?style=flat-square" alt="Research project"/></a>
-<a href="https://github.com/RenanEspinar/digital-stethoscope-viu-2024/blob/main/docs/THESIS_2023.md"><img src="https://img.shields.io/badge/VIU-Thesis%20Documentation-64748B?style=flat-square" alt="Thesis documentation"/></a>'''
+</div>
 
-replace_once(
-    r'<strong><a href="https://github.com/RenanEspinar/digital-stethoscope-viu-2024">Digital Stethoscope</a></strong><br>.*?(?=\s*</td>)',
-    stethoscope
-)
+**Official thesis title:**  
+*Diseño de un prototipo de sistema de estetoscopio electrónico para digitalizar y procesar sonidos cardíacos.*
 
-focus = '''</table>
+**Thesis supervisor:** Dr. Aldo Eleazar Pérez Ramos  
+**Academic period:** 2022–2023  
+**Defense period:** November 2023
 
-## Engineering focus
+### Project Overview
 
-| Area | Technologies and experience |
+Designed and implemented an electronic stethoscope system for acquiring, digitizing, transmitting, recording and processing cardiac acoustic signals.
+
+The prototype combines a conventional stethoscope chestpiece with an electronic acquisition system and a Python desktop application.
+
+**Technical implementation**
+
+- **ESP32** microcontroller for acoustic signal acquisition and wireless communication.
+- **MAX9814** microphone amplifier for analog signal conditioning.
+- **Wi-Fi** transmission of cardiac acoustic data.
+- **Python** application for audio reception, recording and visualization.
+- **Digital Signal Processing**, including FFT-based spectral analysis and digital filtering.
+- **WAV recording** for subsequent listening and analysis.
+- **Custom 3D-printed enclosure** designed using CAD tools.
+
+### Experimental Evaluation
+
+The original research included exploratory recordings from **five patients at Hospital de Clínicas, La Paz, Bolivia**, reviewed by a medical specialist.
+
+The study documented successful audio acquisition, recording, processing and professional assessment of the signals.
+
+The results represent exploratory engineering and clinical observations, not validated diagnostic accuracy or certification as a medical device.
+
+### Research Continuation — 2026
+
+The subsequent research investigates a modular digital stethoscope architecture based on reversible acoustic coupling, low-noise electronic acquisition and an ESP32-S3 platform.
+
+This is a separate development phase requiring independent experimental validation.
+
+<p align="center">
+  <a href="https://github.com/RenanEspinar/digital-stethoscope-viu-2024">
+    <img src="https://img.shields.io/badge/View-Research%20Repository-123A6D?style=for-the-badge&logo=github&logoColor=white" alt="Research Repository"/>
+  </a>
+  <a href="https://github.com/RenanEspinar/digital-stethoscope-viu-2024/blob/main/docs/THESIS_2023.md">
+    <img src="https://img.shields.io/badge/Read-Technical%20Documentation-52677D?style=for-the-badge" alt="Technical Documentation"/>
+  </a>
+</p>
+
+---
+
+## Selected Engineering Projects
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### <a href="https://github.com/RenanEspinar/HomeCar">HomeCar</a>
+
+<sub>Android Auto · Java · Home Assistant</sub>
+
+Android application for displaying and interacting with Home Assistant dashboards through Android Auto.
+
+Built upon the Fermata ecosystem, with ongoing development and testing for compatibility with different vehicle interfaces and input methods.
+
+**Engineering areas:** Android development, automotive interfaces, networking and home automation.
+
+<a href="https://github.com/RenanEspinar/HomeCar/issues">
+<img src="https://img.shields.io/github/issues/RenanEspinar/HomeCar?style=flat-square&label=Issues" alt="Issues"/>
+</a>
+<a href="https://github.com/RenanEspinar/HomeCar/pulls">
+<img src="https://img.shields.io/github/issues-pr/RenanEspinar/HomeCar?style=flat-square&label=Pull%20Requests" alt="Pull Requests"/>
+</a>
+<a href="https://github.com/RenanEspinar/HomeCar/releases">
+<img src="https://img.shields.io/github/v/release/RenanEspinar/HomeCar?include_prereleases&style=flat-square&label=Release" alt="Releases"/>
+</a>
+
+</td>
+<td width="50%" valign="top">
+
+### <a href="https://github.com/RenanEspinar/Alexa-RTSP-Bridge">Alexa RTSP Bridge</a>
+
+<sub>Python · Docker · FFmpeg · Home Assistant</sub>
+
+Integration system for connecting RTSP security cameras with Amazon Alexa through a managed HLS streaming pipeline.
+
+Designed for Linux servers using containerized services, network communication and camera stream management.
+
+**Engineering areas:** Linux administration, multimedia streaming, Docker, Python and IoT integration.
+
+<a href="https://github.com/RenanEspinar/Alexa-RTSP-Bridge/issues">
+<img src="https://img.shields.io/github/issues/RenanEspinar/Alexa-RTSP-Bridge?style=flat-square&label=Issues" alt="Issues"/>
+</a>
+<a href="https://github.com/RenanEspinar/Alexa-RTSP-Bridge/commits">
+<img src="https://img.shields.io/github/last-commit/RenanEspinar/Alexa-RTSP-Bridge?style=flat-square&label=Updated" alt="Last Commit"/>
+</a>
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### <a href="https://github.com/RenanEspinar/KYVORA">KYVORA / LIFTLOG</a>
+
+<sub>Flutter · FastAPI · PostgreSQL · SQLite</sub>
+
+Android workout tracking application designed for offline-first operation and synchronization through a backend API.
+
+Includes workout management, local data storage, authentication infrastructure and a server-side architecture.
+
+**Status:** Public test build, with ongoing development and validation.
+
+**Engineering areas:** Mobile development, backend APIs, relational databases and software architecture.
+
+<a href="https://github.com/RenanEspinar/KYVORA/issues">
+<img src="https://img.shields.io/github/issues/RenanEspinar/KYVORA?style=flat-square&label=Issues" alt="Issues"/>
+</a>
+<a href="https://github.com/RenanEspinar/KYVORA/commits">
+<img src="https://img.shields.io/github/last-commit/RenanEspinar/KYVORA?style=flat-square&label=Updated" alt="Last Commit"/>
+</a>
+
+</td>
+<td width="50%" valign="top">
+
+### <a href="https://github.com/RenanEspinar/control-systems-lab">Control Systems Lab</a>
+
+<sub>Python · Control Engineering · PID</sub>
+
+Simulation and analysis of closed-loop control systems, including pressure regulation, controller response and disturbances.
+
+Developed to explore dynamic models, feedback control and performance evaluation.
+
+**Engineering areas:** Dynamic systems, control theory, simulation and applied mathematics.
+
+<a href="https://github.com/RenanEspinar/control-systems-lab">
+<img src="https://img.shields.io/badge/View-Repository-64748B?style=flat-square" alt="Repository"/>
+</a>
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### <a href="https://github.com/RenanEspinar/pid-control-web-simulator">PID Web Simulator</a>
+
+<sub>Python · Flask · NumPy · Matplotlib</sub>
+
+Web-based simulator for modifying PID controller gains and visualizing dynamic system responses.
+
+Provides an interactive environment for studying proportional, integral and derivative control.
+
+<a href="https://github.com/RenanEspinar/pid-control-web-simulator">
+<img src="https://img.shields.io/badge/View-Repository-64748B?style=flat-square" alt="Repository"/>
+</a>
+
+</td>
+<td width="50%" valign="top">
+
+### <a href="https://github.com/RenanEspinar/digital-stethoscope-viu-2024">Biomedical Instrumentation</a>
+
+<sub>ESP32 · Python · Biomedical DSP</sub>
+
+Research documentation for an electronic stethoscope developed during my Master's degree.
+
+Includes original prototype photographs, engineering architecture, experimental methodology and technical findings.
+
+<a href="https://github.com/RenanEspinar/digital-stethoscope-viu-2024">
+<img src="https://img.shields.io/badge/View-Research-64748B?style=flat-square" alt="Research"/>
+</a>
+
+</td>
+</tr>
+</table>
+
+---
+
+## Technical Expertise
+
+| Area | Technologies and Experience |
 |---|---|
-| Software | Python, Java, Flutter, FastAPI, Linux, Git |
-| Embedded | ESP32, Arduino, sensors, IoT |
-| Infrastructure | Docker, Home Assistant, networking |
-| Engineering | Robotics, CAD, 3D printing, PID control |
-| Research | Biomedical instrumentation, DSP, experimental validation |
+| **Programming** | Python, Java, C/C++, Dart, MATLAB |
+| **Mobile Development** | Android, Flutter, application architecture |
+| **Backend Development** | FastAPI, Flask, REST APIs, PostgreSQL, SQLite |
+| **Linux & Infrastructure** | Ubuntu Server, Docker, Git, networking, Home Assistant |
+| **Embedded Systems** | ESP32, Arduino, sensors, microcontrollers, IoT |
+| **Control Engineering** | PID, dynamic modeling, feedback systems, simulation |
+| **Biomedical Engineering** | Biomedical instrumentation, acoustic sensing, digital signal processing |
+| **Mechanical Design** | CAD, 3D modeling, additive manufacturing, prototyping |
+| **Research** | Experimental design, data analysis, technical documentation, scientific writing |
 
-**Research:** Co-author of *MAMBU: A Bolivian Case of Response to Artificial Ventilators Shortage*, IEEE ANDESCON 2022 ([DOI](https://doi.org/10.1109/ANDESCON56260.2022.9989651)).
+---
 
-'''
+## Academic Background
 
-replace_once(
-    r'</table>Repository activity.*?(?=<details>)',
-    focus
-)
+**Master's Degree in Biomedical Engineering**  
+Universidad Internacional de Valencia (VIU), Spain — 2024
 
-additional = '''<details>
-<summary><strong>Additional engineering projects</strong></summary>
+Master's thesis developed during 2022–2023: electronic stethoscope for digital acquisition and processing of cardiac sounds.
 
-- [Bode Diagram Analyzer](https://github.com/RenanEspinar/detector-de-bode) — MATLAB frequency-response visualization.
-- [Stability Detector](https://github.com/RenanEspinar/detector-de-estabilidad) — MATLAB stability analysis.
-- [Klipper / XYZ Da Vinci Pro](https://github.com/RenanEspinar/Klipper---XYZ-Davinci-Pro-V1.0) — 3D-printer retrofit project.
-- [F450 / APM 2.8](https://github.com/RenanEspinar/Parametros-De-Drone-F450-APM2.8-) — flight-controller configuration.
+**Bachelor's Degree in Mechatronics Engineering**  
+Universidad Católica Boliviana "San Pablo", Bolivia — 2021
+
+### Research and Academic Experience
+
+- Research Coordinator for Technology and Computer Science — **UNIVALLE**.
+- University teaching in engineering, physics and technology.
+- Research and development of biomedical and mechatronic prototypes.
+- Scientific manuscript reviewer — **Journal Boliviano de Ciencias**.
+- Applied research in electronic instrumentation, control and signal processing.
+
+### Scientific Publication
+
+**MAMBU: A Bolivian Case of Response to Artificial Ventilators Shortage**
+
+IEEE ANDESCON, 2022. Co-author.
+
+[DOI: 10.1109/ANDESCON56260.2022.9989651](https://doi.org/10.1109/ANDESCON56260.2022.9989651)
+
+---
+
+## Additional Engineering Projects
+
+<details>
+<summary><strong>Explore other repositories</strong></summary>
+
+- [Bode Diagram Analyzer](https://github.com/RenanEspinar/detector-de-bode) — MATLAB-based frequency-response analysis and visualization.
+- [Stability Detector](https://github.com/RenanEspinar/detector-de-estabilidad) — Control-system stability analysis.
+- [Klipper / XYZ Da Vinci Pro](https://github.com/RenanEspinar/Klipper---XYZ-Davinci-Pro-V1.0) — 3D-printer controller retrofit and firmware configuration project.
+- [F450 / APM 2.8](https://github.com/RenanEspinar/Parametros-De-Drone-F450-APM2.8-) — Flight-controller parameters and UAV engineering.
 
 </details>
 
-## GitHub activity'''
+---
 
-replace_once(
-    r'<details>\s*<summary><strong>Additional engineering projects</strong></summary>.*?</details>GitHub activity',
-    additional
-)
+## GitHub Activity
 
-text = text.replace("</div><details>", "</div>\n\n<details>")
-text = text.replace("</details><sub>", "</details>\n\n<sub>")
+<div align="center">
 
-if "#cardiac-audio-recordings" in text:
-    raise RuntimeError("Enlace antiguo de audio detectado")
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=RenanEspinar&theme=github_dark" alt="GitHub Contribution Activity" width="95%"/>
 
-p.write_text(text.rstrip() + "\n", encoding="utf-8")
-print("README actualizado")
-PY
+</div>
 
-echo "=== VALIDANDO ==="
-git diff --check
-git diff --stat
+<details>
+<summary><strong>Animated contribution graph</strong></summary>
 
-echo "=== CONFIGURANDO AUTOR ==="
-git config user.name "Renán Andrés Espinar Saavedra"
-git config user.email "renanespinar.19@gmail.com"
+<div align="center">
 
-echo "=== PUBLICANDO ==="
-gh auth setup-git
-git add README.md
-git commit -m "docs: refresh engineering profile and VIU thesis"
-git push origin main
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/RenanEspinar/RenanEspinar/output/github-snake-dark.gif"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/RenanEspinar/RenanEspinar/output/github-snake-light.gif"/>
+  <img src="https://raw.githubusercontent.com/RenanEspinar/RenanEspinar/output/github-snake-light.gif" alt="Contribution Graph" width="95%"/>
+</picture>
 
-echo "=== RESULTADO ==="
-git status
-git log -1 --oneline
+</div>
 
+</details>
+
+---
+
+<div align="center">
+
+**Engineering · Applied Research · Software Development · Biomedical Technology**
+
+<sub>
+Mechatronics Engineering · Biomedical Engineering MSc · Research Coordinator · IEEE Co-author
+</sub>
+
+<p>
+  <a href="https://www.linkedin.com/in/renanessaa">LinkedIn</a>
+  ·
+  <a href="https://orcid.org/0009-0007-1918-7177">ORCID</a>
+  ·
+  <a href="https://github.com/RenanEspinar">GitHub</a>
+</p>
+
+</div>
