@@ -1,105 +1,99 @@
 <div align="center">Renan Andres Espinar Saavedra
 Mechatronics Engineer · MSc in Biomedical Engineering
-<a href="https://readme-typing-svg.demolab.com/demo/">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=19&duration=2600&pause=1200&color=3976B9&center=true&vCenter=true&width=860&height=55&lines=Applied+Research+%7C+Robotics+%7C+Engineering+Software;Python+%7C+Linux+%7C+Embedded+Systems;Android+%7C+IoT+%7C+Control+Systems;Building+and+debugging+real+hardware-software+systems" alt="Animated engineering specialties" />
-</a><p>
-  <a href="https://www.linkedin.com/in/renanessaa"><img src="https://img.shields.io/badge/LinkedIn-Profile-24292F?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="https://orcid.org/0009-0007-1918-7177"><img src="https://img.shields.io/badge/ORCID-Research-24292F?style=flat-square&logo=orcid&logoColor=white" alt="ORCID" /></a>
-  <a href="mailto:renanespinar.19@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-24292F?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
-  <a href="https://github.com/RenanEspinar?tab=repositories"><img src="https://img.shields.io/badge/GitHub-Projects-24292F?style=flat-square&logo=github&logoColor=white" alt="Repositories" /></a>
-</p>
-La Paz, Bolivia · Open to fully remote software and engineering roles
-</div>Engineering profile
-I work at the intersection of software, embedded electronics, physical systems and applied research. My projects range from Android applications and Linux-based infrastructure to biomedical instrumentation, feedback control and hardware integration.
-- Andes Labs (2025–present): remote, project-based software development and applied research for Android, Linux and connected platforms.
-- Universidad del Valle — UNIVALLE (2026–present): research coordination in Technology and Computer Science, including biomedical devices and engineering projects.
-- Universidad Internacional de Valencia (2024): Master's research in biomedical instrumentation and digital cardiopulmonary sound acquisition.
-I am particularly interested in systems that must be implemented, measured, debugged and maintained outside a simulation environment.
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=2700&pause=1250&color=3976B9&center=true&vCenter=true&width=760&height=48&lines=Python+%7C+Linux+%7C+Engineering+Software;Android+%7C+APIs+%7C+Connected+Devices;Robotics+%7C+Control+Systems+%7C+IoT;Biomedical+Instrumentation+%7C+Applied+R%26D" alt="Engineering specialties" />
+LinkedIn · ORCID · Email · All repositories
+
+Based in La Paz, Bolivia · Open to fully remote engineering and software roles
+</div>What I build
+I develop software for systems that interact with the physical world: devices, sensors, cameras, actuators and instrumentation. My work includes Android apps, Linux services, Python tools, embedded control and biomedical research prototypes.
+
+Since 2025, I have worked remotely on project-based software development and applied research at Andes Labs. I also coordinate technology and computer-science research at Universidad del Valle (UNIVALLE).
 Selected projects
-<table>
-<tr>
-<td width="50%" valign="top">HomeCar
-Android Auto · Home Assistant · Java
+HomeCar — Home Assistant inside Android Auto
+Purpose: Open a configurable Home Assistant dashboard from an Android Auto interface, without switching to a phone browser.
 
-Android Auto interface for Home Assistant dashboards, using a dedicated WebView and configurable server connection. Built on the open-source Fermata codebase; device compatibility remains under testing.
+Engineering work: Android integration, embedded WebView, session persistence, server configuration and troubleshooting across devices.
 
-<a href="https://github.com/RenanEspinar/HomeCar"><img src="https://img.shields.io/github/stars/RenanEspinar/HomeCar?style=flat-square&label=stars&color=3976B9" alt="HomeCar stars" /></a>
-<a href="https://github.com/RenanEspinar/HomeCar/releases"><img src="https://img.shields.io/github/v/release/RenanEspinar/HomeCar?include_prereleases&style=flat-square&label=release&color=64748B" alt="HomeCar release" /></a>
-</td>
-<td width="50%" valign="top">Alexa RTSP Bridge
-Python · Docker · AWS Lambda · Video streaming
+Stack: Java · Android Auto · Android WebView · Gradle · Home Assistant
 
-Bridge between RTSP cameras, Home Assistant and Alexa-compatible HLS delivery. Covers stream conversion, service integration and deployment architecture.
+Status: Public pre-release. Compatibility depends on Android Auto, the head unit and installation method. Built on the open-source Fermata codebase.
 
-<a href="https://github.com/RenanEspinar/Alexa-RTSP-Bridge"><img src="https://img.shields.io/github/last-commit/RenanEspinar/Alexa-RTSP-Bridge?style=flat-square&color=64748B" alt="Last commit" /></a>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">Digital Stethoscope — VIU 2024
-Biomedical instrumentation · Acoustic acquisition
+Source code · Releases / APK · Issues
+ 
+Alexa RTSP Bridge — View IP cameras through Alexa
+Purpose: Connect RTSP security-camera streams to Amazon Alexa, which requires a compatible stream-delivery workflow.
 
-Master's research into digital recording and processing of cardiopulmonary sounds. Includes two audio examples and a clearly documented exploratory clinical research history.
+Engineering work: RTSP-to-HLS conversion, Home Assistant integration, AWS Lambda proxy logic and container-based video serving.
 
-Project documentation · Sample recordings
-</td>
-<td width="50%" valign="top">KYVORA / LIFTLOG
-Flutter · Dart · FastAPI · PostgreSQL
+Stack: Python · FFmpeg · HLS · AWS Lambda · Docker · Nginx · Cloudflare Tunnel
 
-Android fitness-tracking application with offline session recording, local persistence and backend synchronization. Public repository documents a test build, not a production release.
+Architecture, code and setup
+KYVORA / LIFTLOG — Offline-first workout tracking app
+Purpose: Record gym sessions on Android, including without an internet connection, and synchronize data with a backend when available.
 
-<a href="https://github.com/RenanEspinar/KYVORA"><img src="https://img.shields.io/github/last-commit/RenanEspinar/KYVORA?style=flat-square&color=64748B" alt="Last commit" /></a>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">Control Systems Lab
-Python · PID · System modelling
+Engineering work: Flutter mobile client, local database, account APIs, authentication, PostgreSQL backend and deployment tooling.
 
-Modelling and feedback regulation of vacuum pressure in a biomedical-inspired experimental context; includes simulation results and controller analysis.
-</td>
-<td width="50%" valign="top">PID Control Web Simulator
-Python · Flask · NumPy · Matplotlib
+Stack: Flutter · Dart · SQLite/Drift · FastAPI · PostgreSQL · Docker
 
-Interactive simulation for tuning PID parameters and visualizing the dynamic response of a pressure-control system.
-</td>
-</tr>
-</table>Hardware, robotics and engineering tools
-Project	Engineering focus
-Klipper — XYZ Da Vinci Pro 1.0	3D-printer firmware, motion control, electronics and Linux-based configuration
-F450 / APM 2.8	Multirotor configuration, ArduPilot and flight-control parameters
-Bode Diagram Analyzer	MATLAB frequency-response visualization
-Stability Detector	MATLAB pole visualization and dynamic-system stability
+Status: Test build; not presented as a finished production service.
+
+App and backend · Scope and limitations
+Digital Stethoscope — Cardiac audio acquisition
+Purpose: Record and analyze cardiopulmonary acoustic signals electronically so they can be replayed and reviewed.
+
+Engineering work: Biomedical sensing, acoustic signal acquisition, digitization and audio processing, developed for a 2024 master's thesis at VIU.
+
+Research context: Exploratory recordings were reportedly reviewed by cardiologists at Hospital de Clínicas in La Paz. This portfolio does not claim independent diagnostic accuracy or medical-device certification.
+
+Materials: Research documentation and two unlabeled WAV audio examples. Firmware and detailed hardware files are not public.
+
+Research documentation · Audio recordings
+Control Systems Lab — PID regulation of vacuum pressure
+Purpose: Model how a pressure-control system responds to leakage and disturbances, then compare open-loop operation against PID feedback.
+
+Engineering work: Dynamic-system model, controller implementation, numerical simulation and response plots.
+
+Stack: Python · NumPy · Matplotlib · PID control
+
+Status: Simulation of a biomedical-inspired pressure-control problem, not a clinically validated medical device.
+
+Model, code and results
+PID Control Web Simulator — Tune a controller interactively
+Purpose: Change the proportional, integral and derivative gains and observe how a simulated pressure-control system responds.
+
+Engineering work: Interactive interface and response visualization for control-system learning and experimentation.
+
+Stack: Python · Flask · NumPy · Matplotlib · HTML/CSS
+
+Simulator source
+MATLAB tools
+- Bode Diagram Analyzer — Generates magnitude and phase plots to explore the frequency response of dynamic systems.
+- Stability Detector — Visualizes system poles and classifies stability in MATLAB.
+Research and hardware background
+MAMBU: Contributed to a multidisciplinary emergency mechanical-ventilation project. Co-author of A Bolivian Case of Response to Artificial Ventilators Shortage, IEEE ANDESCON 2022. DOI: 10.1109/ANDESCON56260.2022.9989651.
+
+UNIVALLE, 2026: Research coordination and work involving an intelligent digital stethoscope redesign, GymQuest and a meteorological monitoring station. These initiatives are distinct from the publicly documented VIU prototype; not all implementation materials are public.
+
+Additional hardware experience: 3D-printer firmware retrofits, microcontrollers, sensors, PID control, Raspberry Pi and autopilot configuration. The Klipper and F450/APM repository pages currently have no published project files; they are not listed among the featured demonstrations.
+Tools I work with
+Area	Technologies
+Software	Python, Java, Dart/Flutter, C/C++, MATLAB, Flask, FastAPI
+Linux and infrastructure	Ubuntu/Linux, Docker, Git, PostgreSQL, Nginx, AWS Lambda, Cloudflare
+Devices and networks	Android, Android Auto, Home Assistant, RTSP/HLS, ESP32, Arduino, Raspberry Pi
+Engineering	PID control, sensors, instrumentation, signal acquisition, CAD, prototyping
 
 
-Ongoing research at UNIVALLE: intelligent digital stethoscope redesign, GymQuest and meteorological monitoring station. These are research activities; not all have public code repositories or completed validation.
-Technical stack
-Area	Tools and experience
-Software	Python, Dart/Flutter, Java, C/C++, MATLAB, Flask, FastAPI
-Platforms	Ubuntu/Linux, Android, Android Auto, Git, Docker, PostgreSQL
-Embedded / IoT	ESP32, ESP8266, Arduino, Raspberry Pi, sensors, ADC, PWM
-Infrastructure	Home Assistant, AWS Lambda, Cloudflare, FFmpeg, RTSP/HLS, Nginx
-Engineering	PID control, system modelling, instrumentation, CAD, additive manufacturing, experimental analysis
-
-
-Teaching and research roles
-- Research Coordinator, UNIVALLE: research project coordination and applied technology development (2026–present).
-- Postgraduate Instructor, TechLab Bolivia: Innovation, Information Systems and Digital Transformation in Biomedical Management (October–November 2026).
-- Instructor, Forma-Net: Rocket Design and Construction (October 2026).
-- University teaching: engineering and physics courses, including laboratory and experimental work.
-Research and publications
-- MAMBU: co-author of A Bolivian Case of Response to Artificial Ventilators Shortage, IEEE ANDESCON 2022. DOI: 10.1109/ANDESCON56260.2022.9989651.
-- Digital stethoscope: 2024 VIU Master's research with clinician-reviewed recordings reported by the author. The available public records do not establish independent diagnostic accuracy or medical-device certification.
-- Scientific peer review: reviewer, Journal Boliviano de Ciencias (since August 2026).
+Experience and research
+- Andes Labs (2025–present): Remote software development and applied R&D across Android, Linux and connected platforms.
+- UNIVALLE (2026–present): Research Coordinator for Technology and Computer Science; university teaching and project development.
+- TechLab Bolivia (Oct–Nov 2026): Postgraduate instruction in innovation, information systems and digital transformation in biomedical management.
+- Forma-Net (Oct 2026): Instructor, rocket design and construction.
+- Journal Boliviano de Ciencias (since Aug 2026): Scientific manuscript reviewer.
 GitHub activity
-<div align="center"><img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=RenanEspinar&theme=github_dark" alt="GitHub activity overview" width="95%" /><details>
-<summary><b>View contribution animation</b></summary><!-- The animation is generated daily by .github/workflows/contribution-snake.yml. -->
-<picture>
+<div align="center"><img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=RenanEspinar&theme=github_dark" width="95%" alt="GitHub contribution history" /><details>
+<summary>Show animated contribution graph</summary><picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/RenanEspinar/RenanEspinar/output/github-snake-dark.gif" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/RenanEspinar/RenanEspinar/output/github-snake-light.gif" />
-  <img src="https://raw.githubusercontent.com/RenanEspinar/RenanEspinar/output/github-snake-light.gif" alt="Animated GitHub contributions" width="95%" />
-</picture></details></div>How I work
-<div align="center"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=16&duration=1800&pause=850&color=3976B9&center=true&vCenter=true&width=820&height=48&lines=Define+the+problem;Model+and+simulate;Build+the+prototype;Measure+and+debug;Document+and+iterate" alt="Animated engineering workflow" />Model → Implement → Measure → Validate → Improve
-</div>
-I publish technical work with its limitations, implementation status and reproducible documentation. Issues, engineering discussions and legitimate research collaborations are welcome.
-<div align="center">
-Browse all repositories · LinkedIn · Research profile
+  <img src="https://raw.githubusercontent.com/RenanEspinar/RenanEspinar/output/github-snake-light.gif" alt="Animated GitHub contribution graph" width="95%" />
+</picture></details></div><div align="center">Projects · LinkedIn · Email
 </div>
