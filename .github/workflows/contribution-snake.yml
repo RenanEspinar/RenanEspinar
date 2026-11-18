@@ -1,0 +1,30 @@
+name: Contribution animation
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 4 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  snake:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Generate light and dark contribution GIFs
+        uses: Platane/snk@v3
+        with:
+          github_user_name: RenanEspinar
+          outputs: |
+            dist/github-snake-light.gif?color_snake=#2563EB&color_dots=#EBEDF0,#9EC5F8,#6EA8FE,#417BDB,#1846A3&color_background=#FFFFFF
+            dist/github-snake-dark.gif?color_snake=#60A5FA&color_dots=#161B22,#0E447A,#14528F,#2069AC,#3285D4&color_background=#0D1117
+
+      - name: Publish generated GIFs to output branch
+        uses: crazy-max/ghaction-github-pages@v5
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
